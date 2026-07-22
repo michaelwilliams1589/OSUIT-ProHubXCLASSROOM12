@@ -1,0 +1,287 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "system": {
+      "ownerUid": {
+        ".read": "auth != null",
+        ".write": "auth != null && ((!data.exists() && newData.val() == auth.uid) || data.val() == auth.uid || root.child('system/ownerEmail').val() == auth.token.email)"
+      },
+      "ownerEmail": {
+        ".read": "auth != null && (root.child('system/ownerUid').val() == auth.uid || data.val() == auth.token.email)",
+        ".write": "auth != null && (root.child('system/ownerUid').val() == auth.uid || (!data.exists() && newData.val() == auth.token.email) || data.val() == auth.token.email)"
+      },
+      "setupComplete": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('system/ownerUid').val() == auth.uid"
+      },
+      "version": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('system/ownerUid').val() == auth.uid"
+      }
+    },
+    "organization": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')"
+    },
+    "roles": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+        ".write": "auth != null && (root.child('system/ownerUid').val() == auth.uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || (auth.uid == $uid && !data.exists() && newData.val() == 'student'))",
+        ".validate": "!newData.exists() || (newData.val() == 'student' || newData.val() == 'ta' || newData.val() == 'instructor' || newData.val() == 'chair' || newData.val() == 'assistant_dean' || newData.val() == 'admin' || newData.val() == 'guest')"
+      },
+      ".read": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')"
+    },
+    "users": {
+      ".read": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')",
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+        ".write": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))"
+      }
+    },
+    "templates": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+        "$id": {
+          ".write": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+          ".validate": "newData.hasChildren(['name','ownerUid']) && newData.child('ownerUid').val() == $uid"
+        },
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "courses": {
+      "$cid": {
+        ".read": "auth != null && root.child('courseMembers').child($cid).child(auth.uid).exists()",
+        ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || root.child('courseMembers').child($cid).child(auth.uid).val() == 'instructor' || (!data.exists() && newData.child('ownerUid').val() == auth.uid && root.child('roles').child(auth.uid).val() == 'instructor'))"
+      }
+    },
+    "courseMembers": {
+      "$cid": {
+        "$uid": {
+          ".read": "auth != null && root.child('courseMembers').child($cid).child(auth.uid).exists()",
+          ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || root.child('courseMembers').child($cid).child(auth.uid).val() == 'instructor' || (auth.uid == $uid && newData.val() == 'student') || (auth.uid == $uid && newData.val() == 'instructor' && root.child('courses').child($cid).child('ownerUid').val() == auth.uid && root.child('roles').child(auth.uid).val() == 'instructor'))",
+          ".validate": "!newData.exists() || newData.val() == 'student' || newData.val() == 'instructor'"
+        }
+      }
+    },
+    "userCourses": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$cid": {
+          ".write": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))"
+        }
+      }
+    },
+    "joinCodes": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || (root.child('roles').child(auth.uid).val() == 'instructor' && ((!data.exists() && root.child('courses').child(newData.val()).child('ownerUid').val() == auth.uid) || (data.exists() && root.child('courses').child(data.val()).child('ownerUid').val() == auth.uid))))"
+      }
+    },
+    "courseChats": {
+      "$cid": {
+        ".read": "auth != null && root.child('courseMembers').child($cid).child(auth.uid).exists()",
+        "$msg": {
+          ".write": "auth != null && root.child('courseMembers').child($cid).child(auth.uid).exists() && (!data.exists() && newData.child('uid').val() == auth.uid)"
+        }
+      }
+    },
+    "marketplace": {
+      ".read": "auth != null",
+      "$id": {
+        ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || (root.child('roles').child(auth.uid).val() == 'instructor' && ((!data.exists() && newData.child('ownerUid').val() == auth.uid) || (data.exists() && data.child('ownerUid').val() == auth.uid))))"
+      }
+    },
+    "semesters": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')"
+    },
+    "courseAnnouncements": {
+      "$cid": {
+        ".read": "auth != null && root.child('courseMembers').child($cid).child(auth.uid).exists()",
+        "$aid": {
+          ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || root.child('courseMembers').child($cid).child(auth.uid).val() == 'instructor')",
+          ".validate": "!newData.exists() || newData.hasChildren(['title','authorUid','createdAt'])"
+        }
+      }
+    },
+    "facultyRequests": {
+      ".read": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')",
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+        ".write": "auth != null && ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') || (auth.uid == $uid && !data.exists() && newData.child('uid').val() == auth.uid && newData.child('requestedRole').val() == 'instructor' && newData.child('status').val() == 'pending'))",
+        ".validate": "!newData.exists() || (newData.hasChildren(['uid','requestedRole','status']) && newData.child('uid').val() == $uid && newData.child('requestedRole').val() == 'instructor' && (newData.child('status').val() == 'pending' || newData.child('status').val() == 'approved' || newData.child('status').val() == 'denied'))"
+      }
+    },
+    "facultyDirectory": {
+      ".read": "auth != null",
+      "$id": {
+        ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')"
+      }
+    },
+    "notebooks": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$noteId": {
+          ".write": "auth != null && auth.uid == $uid",
+          ".validate": "!newData.exists() || (newData.hasChild('title') && newData.hasChild('updatedAt'))"
+        },
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userCalendars": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$eventId": {
+          ".write": "auth != null && auth.uid == $uid",
+          ".validate": "!newData.exists() || (newData.hasChild('title') && newData.hasChild('start'))"
+        },
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userSports": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userEntertainment": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userWidgets": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userTasks": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$taskId": {
+          ".write": "auth != null && auth.uid == $uid"
+        },
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userNotes": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$noteId": {
+          ".write": "auth != null && auth.uid == $uid"
+        },
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "userQuickLinks": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "facultyChats": {
+      "$room": {
+        ".read": "auth != null && (root.child('roles').child(auth.uid).val() == 'instructor' || root.child('roles').child(auth.uid).val() == 'ta' || root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')",
+        "$msg": {
+          ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'instructor' || root.child('roles').child(auth.uid).val() == 'ta' || root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !data.exists() && newData.child('uid').val() == auth.uid",
+          ".validate": "newData.hasChildren(['uid','name','text','createdAt'])"
+        }
+      }
+    },
+    "leadershipChats": {
+      "$room": {
+        ".read": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')",
+        "$msg": {
+          ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !data.exists() && newData.child('uid').val() == auth.uid",
+          ".validate": "newData.hasChildren(['uid','name','text','createdAt'])"
+        }
+      }
+    },
+    "homeProfiles": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "homeNotes": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "homeReminders": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && (auth.uid == $uid || ((root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean') && !newData.exists()))"
+      }
+    },
+    "families": {
+      "$fid": {
+        ".read": "auth != null && (root.child('familyMembers').child($fid).child(auth.uid).exists() || data.child('ownerUid').val() == auth.uid)",
+        ".write": "auth != null && ((!data.exists() && newData.child('ownerUid').val() == auth.uid) || data.child('ownerUid').val() == auth.uid)"
+      }
+    },
+    "familyInviteCodes": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && ((!data.exists() && root.child('families').child(newData.val()).child('ownerUid').val() == auth.uid) || (data.exists() && root.child('families').child(data.val()).child('ownerUid').val() == auth.uid))"
+      }
+    },
+    "familyMembersByUser": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        "$fid": {
+          ".write": "auth != null && (auth.uid == $uid || root.child('familyMembers').child($fid).child(auth.uid).child('role').val() == 'admin')"
+        }
+      }
+    },
+    "familyMembers": {
+      "$fid": {
+        ".read": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()",
+        "$uid": {
+          ".write": "auth != null && ((auth.uid == $uid && !data.exists() && root.child('families').child($fid).child('ownerUid').val() == auth.uid) || root.child('familyMembers').child($fid).child(auth.uid).child('role').val() == 'admin')"
+        }
+      }
+    },
+    "familyJoinRequests": {
+      "$fid": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid == $uid || root.child('familyMembers').child($fid).child(auth.uid).child('role').val() == 'admin')",
+          ".write": "auth != null && ((auth.uid == $uid && !data.exists() && newData.child('uid').val() == auth.uid && newData.child('status').val() == 'pending') || root.child('familyMembers').child($fid).child(auth.uid).child('role').val() == 'admin')"
+        }
+      }
+    },
+    "familyChats": {
+      "$fid": {
+        ".read": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()",
+        "$msg": {
+          ".write": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists() && (!data.exists() && newData.child('uid').val() == auth.uid)"
+        }
+      }
+    },
+    "familyLists": {
+      "$fid": {
+        ".read": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()",
+        "$item": {
+          ".write": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()"
+        }
+      }
+    },
+    "familyCalendar": {
+      "$fid": {
+        ".read": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()",
+        "$event": {
+          ".write": "auth != null && root.child('familyMembers').child($fid).child(auth.uid).exists()"
+        }
+      }
+    },
+    "blockedAccounts": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid == $uid || (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean'))",
+        ".write": "auth != null && (root.child('roles').child(auth.uid).val() == 'admin' || root.child('roles').child(auth.uid).val() == 'chair' || root.child('roles').child(auth.uid).val() == 'assistant_dean')"
+      }
+    }
+  }
+}
