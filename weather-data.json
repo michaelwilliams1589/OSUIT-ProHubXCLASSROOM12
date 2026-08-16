@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-16T10:42:24.243994+00:00",
-  "lastAttemptAt": "2026-08-16T10:42:24.243994+00:00",
+  "generatedAt": "2026-08-16T11:37:20.278740+00:00",
+  "lastAttemptAt": "2026-08-16T11:37:20.278740+00:00",
   "status": "ok",
   "locations": {
     "okmulgee, ok": {
@@ -40,7 +40,7 @@
         {
           "number": 1,
           "name": "Overnight",
-          "startTime": "2026-08-16T03:00:00-05:00",
+          "startTime": "2026-08-16T05:00:00-05:00",
           "endTime": "2026-08-16T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 77,
@@ -304,7 +304,7 @@
           "detailedForecast": "Sunny, with a high near 100. Northeast wind 0 to 5 mph."
         }
       ],
-      "updated": "2026-08-16T10:42:24.243994+00:00",
+      "updated": "2026-08-16T11:37:20.278740+00:00",
       "stale": false
     },
     "tulsa, ok": {
@@ -315,9 +315,9 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-16T05:00:00-05:00",
-        "endTime": "2026-08-16T06:00:00-05:00",
-        "isDaytime": false,
+        "startTime": "2026-08-16T06:00:00-05:00",
+        "endTime": "2026-08-16T07:00:00-05:00",
+        "isDaytime": true,
         "temperature": 83,
         "temperatureUnit": "F",
         "temperatureTrend": null,
@@ -333,10 +333,10 @@
           "unitCode": "wmoUnit:percent",
           "value": 63
         },
-        "windSpeed": "10 mph",
+        "windSpeed": "5 mph",
         "windDirection": "S",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
@@ -607,7 +607,7 @@
           "detailedForecast": "Sunny, with a high near 99. Northeast wind around 5 mph."
         }
       ],
-      "updated": "2026-08-16T10:42:24.243994+00:00",
+      "updated": "2026-08-16T11:37:20.278740+00:00",
       "stale": false
     },
     "bixby, ok": {
@@ -910,7 +910,7 @@
           "detailedForecast": "Sunny, with a high near 100. Northeast wind around 5 mph."
         }
       ],
-      "updated": "2026-08-16T10:42:24.243994+00:00",
+      "updated": "2026-08-16T11:37:20.278740+00:00",
       "stale": false
     },
     "stillwater, ok": {
@@ -949,7 +949,7 @@
         {
           "number": 1,
           "name": "Overnight",
-          "startTime": "2026-08-16T01:00:00-05:00",
+          "startTime": "2026-08-16T04:00:00-05:00",
           "endTime": "2026-08-16T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 79,
@@ -961,9 +961,9 @@
           },
           "windSpeed": "8 mph",
           "windDirection": "SSW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 79. South southwest wind around 8 mph."
+          "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": "Mostly clear, with a low around 79. South southwest wind around 8 mph."
         },
         {
           "number": 2,
@@ -1213,7 +1213,7 @@
           "detailedForecast": "Sunny, with a high near 101."
         }
       ],
-      "updated": "2026-08-16T10:42:24.243994+00:00",
+      "updated": "2026-08-16T11:37:20.278740+00:00",
       "stale": false
     },
     "oklahoma city, ok": {
@@ -1224,10 +1224,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-16T05:00:00-05:00",
-        "endTime": "2026-08-16T06:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 84,
+        "startTime": "2026-08-16T06:00:00-05:00",
+        "endTime": "2026-08-16T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 83,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -1240,19 +1240,19 @@
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 55
+          "value": 57
         },
         "windSpeed": "10 mph",
         "windDirection": "SSW",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
           "name": "Overnight",
-          "startTime": "2026-08-16T01:00:00-05:00",
+          "startTime": "2026-08-16T05:00:00-05:00",
           "endTime": "2026-08-16T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 81,
@@ -1262,11 +1262,11 @@
             "unitCode": "wmoUnit:percent",
             "value": 1
           },
-          "windSpeed": "7 to 10 mph",
-          "windDirection": "S",
+          "windSpeed": "10 mph",
+          "windDirection": "SSW",
           "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
           "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 81. South wind 7 to 10 mph."
+          "detailedForecast": "Clear, with a low around 81. South southwest wind around 10 mph."
         },
         {
           "number": 2,
@@ -1516,7 +1516,7 @@
           "detailedForecast": "Sunny, with a high near 100."
         }
       ],
-      "updated": "2026-08-16T10:42:24.243994+00:00",
+      "updated": "2026-08-16T11:37:20.278740+00:00",
       "stale": false
     }
   }
