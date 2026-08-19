@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-19T10:48:12.730350+00:00",
-  "lastAttemptAt": "2026-08-19T10:48:12.730350+00:00",
+  "generatedAt": "2026-08-19T11:43:12.057314+00:00",
+  "lastAttemptAt": "2026-08-19T11:43:12.057314+00:00",
   "status": "ok",
   "locations": {
     "okmulgee, ok": {
@@ -12,10 +12,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-19T04:00:00-05:00",
-        "endTime": "2026-08-19T05:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 84,
+        "startTime": "2026-08-19T06:00:00-05:00",
+        "endTime": "2026-08-19T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 82,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -24,41 +24,22 @@
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 16.666666666666668
+          "value": 17.22222222222222
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 48
+          "value": 53
         },
-        "windSpeed": "10 mph",
-        "windDirection": "S",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "windSpeed": "5 mph",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
-          "name": "Overnight",
-          "startTime": "2026-08-19T04:00:00-05:00",
-          "endTime": "2026-08-19T06:00:00-05:00",
-          "isDaytime": false,
-          "temperature": 79,
-          "temperatureUnit": "F",
-          "temperatureTrend": null,
-          "probabilityOfPrecipitation": {
-            "unitCode": "wmoUnit:percent",
-            "value": 0
-          },
-          "windSpeed": "10 mph",
-          "windDirection": "SW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear. Low around 79, with temperatures rising to around 83 overnight. Southwest wind around 10 mph."
-        },
-        {
-          "number": 2,
-          "name": "Wednesday",
+          "name": "Today",
           "startTime": "2026-08-19T06:00:00-05:00",
           "endTime": "2026-08-19T18:00:00-05:00",
           "isDaytime": true,
@@ -76,8 +57,8 @@
           "detailedForecast": "Sunny, with a high near 109. Heat index values as high as 112. Southwest wind 5 to 10 mph."
         },
         {
-          "number": 3,
-          "name": "Wednesday Night",
+          "number": 2,
+          "name": "Tonight",
           "startTime": "2026-08-19T18:00:00-05:00",
           "endTime": "2026-08-20T06:00:00-05:00",
           "isDaytime": false,
@@ -95,7 +76,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms after 4am. Partly cloudy, with a low around 75. Heat index values as high as 109. Northeast wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 4,
+          "number": 3,
           "name": "Thursday",
           "startTime": "2026-08-20T06:00:00-05:00",
           "endTime": "2026-08-20T18:00:00-05:00",
@@ -111,10 +92,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/day/tsra_hi,20/hot?size=medium",
           "shortForecast": "Slight Chance Showers And Thunderstorms then Mostly Sunny",
-          "detailedForecast": "A slight chance of showers and thunderstorms before 7am. Mostly sunny, with a high near 102. Heat index values as high as 108. Northeast wind 0 to 5 mph. Chance of precipitation is 20%."
+          "detailedForecast": "A slight chance of showers and thunderstorms before 7am. Mostly sunny, with a high near 102. Heat index values as high as 108. Northeast wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 5,
+          "number": 4,
           "name": "Thursday Night",
           "startTime": "2026-08-20T18:00:00-05:00",
           "endTime": "2026-08-21T06:00:00-05:00",
@@ -130,10 +111,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
           "shortForecast": "Partly Cloudy",
-          "detailedForecast": "Partly cloudy, with a low around 72. Northeast wind 0 to 5 mph."
+          "detailedForecast": "Partly cloudy, with a low around 72. Heat index values as high as 104. Northeast wind 0 to 5 mph."
         },
         {
-          "number": 6,
+          "number": 5,
           "name": "Friday",
           "startTime": "2026-08-21T06:00:00-05:00",
           "endTime": "2026-08-21T18:00:00-05:00",
@@ -152,7 +133,7 @@
           "detailedForecast": "Sunny, with a high near 102. East wind 0 to 5 mph."
         },
         {
-          "number": 7,
+          "number": 6,
           "name": "Friday Night",
           "startTime": "2026-08-21T18:00:00-05:00",
           "endTime": "2026-08-22T06:00:00-05:00",
@@ -171,7 +152,7 @@
           "detailedForecast": "Mostly clear, with a low around 72. Southeast wind 0 to 5 mph."
         },
         {
-          "number": 8,
+          "number": 7,
           "name": "Saturday",
           "startTime": "2026-08-22T06:00:00-05:00",
           "endTime": "2026-08-22T18:00:00-05:00",
@@ -190,7 +171,7 @@
           "detailedForecast": "Mostly sunny, with a high near 103. South wind 0 to 5 mph."
         },
         {
-          "number": 9,
+          "number": 8,
           "name": "Saturday Night",
           "startTime": "2026-08-22T18:00:00-05:00",
           "endTime": "2026-08-23T06:00:00-05:00",
@@ -209,7 +190,7 @@
           "detailedForecast": "Mostly clear, with a low around 75. Southeast wind around 5 mph."
         },
         {
-          "number": 10,
+          "number": 9,
           "name": "Sunday",
           "startTime": "2026-08-23T06:00:00-05:00",
           "endTime": "2026-08-23T18:00:00-05:00",
@@ -228,7 +209,7 @@
           "detailedForecast": "Mostly sunny, with a high near 104. South wind around 5 mph."
         },
         {
-          "number": 11,
+          "number": 10,
           "name": "Sunday Night",
           "startTime": "2026-08-23T18:00:00-05:00",
           "endTime": "2026-08-24T06:00:00-05:00",
@@ -247,7 +228,7 @@
           "detailedForecast": "Partly cloudy, with a low around 76. South wind around 5 mph."
         },
         {
-          "number": 12,
+          "number": 11,
           "name": "Monday",
           "startTime": "2026-08-24T06:00:00-05:00",
           "endTime": "2026-08-24T18:00:00-05:00",
@@ -266,7 +247,7 @@
           "detailedForecast": "Mostly sunny, with a high near 104. Southwest wind 5 to 10 mph, with gusts as high as 20 mph."
         },
         {
-          "number": 13,
+          "number": 12,
           "name": "Monday Night",
           "startTime": "2026-08-24T18:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
@@ -285,7 +266,7 @@
           "detailedForecast": "Mostly clear, with a low around 77. South wind 5 to 10 mph."
         },
         {
-          "number": 14,
+          "number": 13,
           "name": "Tuesday",
           "startTime": "2026-08-25T06:00:00-05:00",
           "endTime": "2026-08-25T18:00:00-05:00",
@@ -302,9 +283,28 @@
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Sunny",
           "detailedForecast": "Sunny, with a high near 104. Southwest wind 5 to 10 mph."
+        },
+        {
+          "number": 14,
+          "name": "Tuesday Night",
+          "startTime": "2026-08-25T18:00:00-05:00",
+          "endTime": "2026-08-26T06:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 75,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 10
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "SE",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": "Mostly clear, with a low around 75. Southeast wind around 5 mph."
         }
       ],
-      "updated": "2026-08-19T10:48:12.730350+00:00",
+      "updated": "2026-08-19T11:43:12.057314+00:00",
       "stale": false
     },
     "tulsa, ok": {
@@ -315,10 +315,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-19T04:00:00-05:00",
-        "endTime": "2026-08-19T05:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 86,
+        "startTime": "2026-08-19T06:00:00-05:00",
+        "endTime": "2026-08-19T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 84,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -327,41 +327,22 @@
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 17.22222222222222
+          "value": 16.666666666666668
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 46
+          "value": 48
         },
         "windSpeed": "10 mph",
         "windDirection": "SW",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
-          "name": "Overnight",
-          "startTime": "2026-08-19T04:00:00-05:00",
-          "endTime": "2026-08-19T06:00:00-05:00",
-          "isDaytime": false,
-          "temperature": 82,
-          "temperatureUnit": "F",
-          "temperatureTrend": null,
-          "probabilityOfPrecipitation": {
-            "unitCode": "wmoUnit:percent",
-            "value": 0
-          },
-          "windSpeed": "10 mph",
-          "windDirection": "SW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 82. Southwest wind around 10 mph, with gusts as high as 25 mph."
-        },
-        {
-          "number": 2,
-          "name": "Wednesday",
+          "name": "Today",
           "startTime": "2026-08-19T06:00:00-05:00",
           "endTime": "2026-08-19T18:00:00-05:00",
           "isDaytime": true,
@@ -379,8 +360,8 @@
           "detailedForecast": "Sunny, with a high near 106. Heat index values as high as 110. West wind around 10 mph, with gusts as high as 20 mph."
         },
         {
-          "number": 3,
-          "name": "Wednesday Night",
+          "number": 2,
+          "name": "Tonight",
           "startTime": "2026-08-19T18:00:00-05:00",
           "endTime": "2026-08-20T06:00:00-05:00",
           "isDaytime": false,
@@ -398,7 +379,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms between 7pm and 4am. Partly cloudy, with a low around 76. Heat index values as high as 109. Northeast wind 5 to 10 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 4,
+          "number": 3,
           "name": "Thursday",
           "startTime": "2026-08-20T06:00:00-05:00",
           "endTime": "2026-08-20T18:00:00-05:00",
@@ -414,10 +395,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
           "shortForecast": "Mostly Sunny",
-          "detailedForecast": "Mostly sunny, with a high near 99. Heat index values as high as 106. Northeast wind 5 to 10 mph."
+          "detailedForecast": "Mostly sunny, with a high near 99. Heat index values as high as 106. Northeast wind 5 to 10 mph. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 5,
+          "number": 4,
           "name": "Thursday Night",
           "startTime": "2026-08-20T18:00:00-05:00",
           "endTime": "2026-08-21T06:00:00-05:00",
@@ -433,10 +414,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
           "shortForecast": "Mostly Clear",
-          "detailedForecast": "Mostly clear, with a low around 75. Northeast wind 5 to 10 mph."
+          "detailedForecast": "Mostly clear, with a low around 75. Heat index values as high as 104. Northeast wind 5 to 10 mph."
         },
         {
-          "number": 6,
+          "number": 5,
           "name": "Friday",
           "startTime": "2026-08-21T06:00:00-05:00",
           "endTime": "2026-08-21T18:00:00-05:00",
@@ -455,7 +436,7 @@
           "detailedForecast": "Sunny, with a high near 100. East wind 0 to 5 mph."
         },
         {
-          "number": 7,
+          "number": 6,
           "name": "Friday Night",
           "startTime": "2026-08-21T18:00:00-05:00",
           "endTime": "2026-08-22T06:00:00-05:00",
@@ -474,7 +455,7 @@
           "detailedForecast": "Mostly clear, with a low around 77. Southeast wind around 5 mph."
         },
         {
-          "number": 8,
+          "number": 7,
           "name": "Saturday",
           "startTime": "2026-08-22T06:00:00-05:00",
           "endTime": "2026-08-22T18:00:00-05:00",
@@ -493,7 +474,7 @@
           "detailedForecast": "Mostly sunny, with a high near 102. Southeast wind around 5 mph."
         },
         {
-          "number": 9,
+          "number": 8,
           "name": "Saturday Night",
           "startTime": "2026-08-22T18:00:00-05:00",
           "endTime": "2026-08-23T06:00:00-05:00",
@@ -512,7 +493,7 @@
           "detailedForecast": "Mostly clear, with a low around 78. Southeast wind around 5 mph."
         },
         {
-          "number": 10,
+          "number": 9,
           "name": "Sunday",
           "startTime": "2026-08-23T06:00:00-05:00",
           "endTime": "2026-08-23T18:00:00-05:00",
@@ -531,7 +512,7 @@
           "detailedForecast": "Mostly sunny, with a high near 102. South wind 5 to 10 mph."
         },
         {
-          "number": 11,
+          "number": 10,
           "name": "Sunday Night",
           "startTime": "2026-08-23T18:00:00-05:00",
           "endTime": "2026-08-24T06:00:00-05:00",
@@ -550,7 +531,7 @@
           "detailedForecast": "Partly cloudy, with a low around 79. South wind around 10 mph."
         },
         {
-          "number": 12,
+          "number": 11,
           "name": "Monday",
           "startTime": "2026-08-24T06:00:00-05:00",
           "endTime": "2026-08-24T18:00:00-05:00",
@@ -569,7 +550,7 @@
           "detailedForecast": "Mostly sunny, with a high near 103. Southwest wind 10 to 15 mph, with gusts as high as 25 mph."
         },
         {
-          "number": 13,
+          "number": 12,
           "name": "Monday Night",
           "startTime": "2026-08-24T18:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
@@ -588,7 +569,7 @@
           "detailedForecast": "Mostly clear, with a low around 80. South wind 10 to 15 mph."
         },
         {
-          "number": 14,
+          "number": 13,
           "name": "Tuesday",
           "startTime": "2026-08-25T06:00:00-05:00",
           "endTime": "2026-08-25T18:00:00-05:00",
@@ -604,10 +585,29 @@
           "windDirection": "S",
           "icon": "https://api.weather.gov/icons/land/day/hot/tsra_hi,20?size=medium",
           "shortForecast": "Sunny then Slight Chance Showers And Thunderstorms",
-          "detailedForecast": "A slight chance of showers and thunderstorms after 1pm. Sunny, with a high near 103. South wind around 10 mph."
+          "detailedForecast": "A slight chance of showers and thunderstorms after 1pm. Sunny, with a high near 103. South wind around 10 mph. Chance of precipitation is 20%."
+        },
+        {
+          "number": 14,
+          "name": "Tuesday Night",
+          "startTime": "2026-08-25T18:00:00-05:00",
+          "endTime": "2026-08-26T06:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 79,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 15
+          },
+          "windSpeed": "5 to 10 mph",
+          "windDirection": "SE",
+          "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20?size=medium",
+          "shortForecast": "Slight Chance Showers And Thunderstorms",
+          "detailedForecast": "A slight chance of showers and thunderstorms before 1am. Mostly clear, with a low around 79. Southeast wind 5 to 10 mph."
         }
       ],
-      "updated": "2026-08-19T10:48:12.730350+00:00",
+      "updated": "2026-08-19T11:43:12.057314+00:00",
       "stale": false
     },
     "bixby, ok": {
@@ -618,10 +618,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-19T04:00:00-05:00",
-        "endTime": "2026-08-19T05:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 83,
+        "startTime": "2026-08-19T06:00:00-05:00",
+        "endTime": "2026-08-19T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 82,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -634,37 +634,18 @@
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 51
+          "value": 53
         },
         "windSpeed": "10 mph",
-        "windDirection": "S",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
-          "name": "Overnight",
-          "startTime": "2026-08-19T04:00:00-05:00",
-          "endTime": "2026-08-19T06:00:00-05:00",
-          "isDaytime": false,
-          "temperature": 80,
-          "temperatureUnit": "F",
-          "temperatureTrend": null,
-          "probabilityOfPrecipitation": {
-            "unitCode": "wmoUnit:percent",
-            "value": 0
-          },
-          "windSpeed": "10 mph",
-          "windDirection": "SW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 80. Southwest wind around 10 mph, with gusts as high as 20 mph."
-        },
-        {
-          "number": 2,
-          "name": "Wednesday",
+          "name": "Today",
           "startTime": "2026-08-19T06:00:00-05:00",
           "endTime": "2026-08-19T18:00:00-05:00",
           "isDaytime": true,
@@ -682,8 +663,8 @@
           "detailedForecast": "Sunny, with a high near 107. Heat index values as high as 111. West wind around 10 mph, with gusts as high as 20 mph."
         },
         {
-          "number": 3,
-          "name": "Wednesday Night",
+          "number": 2,
+          "name": "Tonight",
           "startTime": "2026-08-19T18:00:00-05:00",
           "endTime": "2026-08-20T06:00:00-05:00",
           "isDaytime": false,
@@ -701,7 +682,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms between 1am and 4am. Partly cloudy, with a low around 75. Heat index values as high as 110. Northeast wind 5 to 10 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 4,
+          "number": 3,
           "name": "Thursday",
           "startTime": "2026-08-20T06:00:00-05:00",
           "endTime": "2026-08-20T18:00:00-05:00",
@@ -717,10 +698,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Mostly Sunny",
-          "detailedForecast": "Mostly sunny, with a high near 100. Heat index values as high as 107. Northeast wind 5 to 10 mph."
+          "detailedForecast": "Mostly sunny, with a high near 100. Heat index values as high as 107. Northeast wind 5 to 10 mph. New rainfall amounts less than a tenth of an inch possible."
         },
         {
-          "number": 5,
+          "number": 4,
           "name": "Thursday Night",
           "startTime": "2026-08-20T18:00:00-05:00",
           "endTime": "2026-08-21T06:00:00-05:00",
@@ -736,10 +717,10 @@
           "windDirection": "NE",
           "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
           "shortForecast": "Partly Cloudy",
-          "detailedForecast": "Partly cloudy, with a low around 73. Northeast wind 0 to 10 mph."
+          "detailedForecast": "Partly cloudy, with a low around 73. Heat index values as high as 105. Northeast wind 0 to 10 mph."
         },
         {
-          "number": 6,
+          "number": 5,
           "name": "Friday",
           "startTime": "2026-08-21T06:00:00-05:00",
           "endTime": "2026-08-21T18:00:00-05:00",
@@ -758,7 +739,7 @@
           "detailedForecast": "Sunny, with a high near 101. East wind 0 to 5 mph."
         },
         {
-          "number": 7,
+          "number": 6,
           "name": "Friday Night",
           "startTime": "2026-08-21T18:00:00-05:00",
           "endTime": "2026-08-22T06:00:00-05:00",
@@ -777,7 +758,7 @@
           "detailedForecast": "Mostly clear, with a low around 75. Southeast wind 0 to 5 mph."
         },
         {
-          "number": 8,
+          "number": 7,
           "name": "Saturday",
           "startTime": "2026-08-22T06:00:00-05:00",
           "endTime": "2026-08-22T18:00:00-05:00",
@@ -796,7 +777,7 @@
           "detailedForecast": "Sunny, with a high near 102. South wind around 5 mph."
         },
         {
-          "number": 9,
+          "number": 8,
           "name": "Saturday Night",
           "startTime": "2026-08-22T18:00:00-05:00",
           "endTime": "2026-08-23T06:00:00-05:00",
@@ -815,7 +796,7 @@
           "detailedForecast": "Mostly clear, with a low around 76. Southeast wind around 5 mph."
         },
         {
-          "number": 10,
+          "number": 9,
           "name": "Sunday",
           "startTime": "2026-08-23T06:00:00-05:00",
           "endTime": "2026-08-23T18:00:00-05:00",
@@ -834,7 +815,7 @@
           "detailedForecast": "Mostly sunny, with a high near 103. South wind 5 to 10 mph."
         },
         {
-          "number": 11,
+          "number": 10,
           "name": "Sunday Night",
           "startTime": "2026-08-23T18:00:00-05:00",
           "endTime": "2026-08-24T06:00:00-05:00",
@@ -853,7 +834,7 @@
           "detailedForecast": "Partly cloudy, with a low around 78. South wind around 10 mph."
         },
         {
-          "number": 12,
+          "number": 11,
           "name": "Monday",
           "startTime": "2026-08-24T06:00:00-05:00",
           "endTime": "2026-08-24T18:00:00-05:00",
@@ -872,7 +853,7 @@
           "detailedForecast": "Mostly sunny, with a high near 104. Southwest wind 10 to 15 mph, with gusts as high as 25 mph."
         },
         {
-          "number": 13,
+          "number": 12,
           "name": "Monday Night",
           "startTime": "2026-08-24T18:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
@@ -891,7 +872,7 @@
           "detailedForecast": "Mostly clear, with a low around 77. South wind 10 to 15 mph."
         },
         {
-          "number": 14,
+          "number": 13,
           "name": "Tuesday",
           "startTime": "2026-08-25T06:00:00-05:00",
           "endTime": "2026-08-25T18:00:00-05:00",
@@ -908,9 +889,28 @@
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Sunny",
           "detailedForecast": "Sunny, with a high near 103. Southwest wind around 10 mph."
+        },
+        {
+          "number": 14,
+          "name": "Tuesday Night",
+          "startTime": "2026-08-25T18:00:00-05:00",
+          "endTime": "2026-08-26T06:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 76,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 15
+          },
+          "windSpeed": "5 to 10 mph",
+          "windDirection": "SE",
+          "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=medium",
+          "shortForecast": "Slight Chance Rain Showers",
+          "detailedForecast": "A slight chance of rain showers between 7pm and 1am. Mostly clear, with a low around 76. Southeast wind 5 to 10 mph."
         }
       ],
-      "updated": "2026-08-19T10:48:12.730350+00:00",
+      "updated": "2026-08-19T11:43:12.057314+00:00",
       "stale": false
     },
     "stillwater, ok": {
@@ -921,10 +921,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-19T04:00:00-05:00",
-        "endTime": "2026-08-19T05:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 84,
+        "startTime": "2026-08-19T06:00:00-05:00",
+        "endTime": "2026-08-19T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 82,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -933,41 +933,22 @@
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 15.555555555555555
+          "value": 15
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 44
+          "value": 46
         },
-        "windSpeed": "12 mph",
+        "windSpeed": "10 mph",
         "windDirection": "SSW",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
-          "name": "Overnight",
-          "startTime": "2026-08-19T02:00:00-05:00",
-          "endTime": "2026-08-19T06:00:00-05:00",
-          "isDaytime": false,
-          "temperature": 80,
-          "temperatureUnit": "F",
-          "temperatureTrend": null,
-          "probabilityOfPrecipitation": {
-            "unitCode": "wmoUnit:percent",
-            "value": 0
-          },
-          "windSpeed": "12 mph",
-          "windDirection": "SSW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 80. South southwest wind around 12 mph."
-        },
-        {
-          "number": 2,
-          "name": "Wednesday",
+          "name": "Today",
           "startTime": "2026-08-19T06:00:00-05:00",
           "endTime": "2026-08-19T18:00:00-05:00",
           "isDaytime": true,
@@ -985,8 +966,8 @@
           "detailedForecast": "A slight chance of rain showers between 7am and 10am. Sunny, with a high near 107. Heat index values as high as 109. West wind around 10 mph. Chance of precipitation is 20%."
         },
         {
-          "number": 3,
-          "name": "Wednesday Night",
+          "number": 2,
+          "name": "Tonight",
           "startTime": "2026-08-19T18:00:00-05:00",
           "endTime": "2026-08-20T06:00:00-05:00",
           "isDaytime": false,
@@ -1004,7 +985,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms after 7pm. Partly cloudy, with a low around 74. Heat index values as high as 107. Northeast wind 5 to 9 mph. Chance of precipitation is 20%."
         },
         {
-          "number": 4,
+          "number": 3,
           "name": "Thursday",
           "startTime": "2026-08-20T06:00:00-05:00",
           "endTime": "2026-08-20T18:00:00-05:00",
@@ -1023,7 +1004,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms before 7am. Mostly sunny, with a high near 101. Heat index values as high as 105. Northeast wind 5 to 8 mph. Chance of precipitation is 20%."
         },
         {
-          "number": 5,
+          "number": 4,
           "name": "Thursday Night",
           "startTime": "2026-08-20T18:00:00-05:00",
           "endTime": "2026-08-21T06:00:00-05:00",
@@ -1039,10 +1020,10 @@
           "windDirection": "ENE",
           "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
           "shortForecast": "Partly Cloudy",
-          "detailedForecast": "Partly cloudy, with a low around 72. East northeast wind 3 to 8 mph."
+          "detailedForecast": "Partly cloudy, with a low around 72. Heat index values as high as 102. East northeast wind 3 to 8 mph."
         },
         {
-          "number": 6,
+          "number": 5,
           "name": "Friday",
           "startTime": "2026-08-21T06:00:00-05:00",
           "endTime": "2026-08-21T18:00:00-05:00",
@@ -1058,10 +1039,10 @@
           "windDirection": "ESE",
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Sunny",
-          "detailedForecast": "Sunny, with a high near 102."
+          "detailedForecast": "Sunny, with a high near 102. East southeast wind 2 to 6 mph."
         },
         {
-          "number": 7,
+          "number": 6,
           "name": "Friday Night",
           "startTime": "2026-08-21T18:00:00-05:00",
           "endTime": "2026-08-22T06:00:00-05:00",
@@ -1080,7 +1061,7 @@
           "detailedForecast": "Mostly clear, with a low around 75."
         },
         {
-          "number": 8,
+          "number": 7,
           "name": "Saturday",
           "startTime": "2026-08-22T06:00:00-05:00",
           "endTime": "2026-08-22T18:00:00-05:00",
@@ -1099,7 +1080,7 @@
           "detailedForecast": "Sunny, with a high near 105."
         },
         {
-          "number": 9,
+          "number": 8,
           "name": "Saturday Night",
           "startTime": "2026-08-22T18:00:00-05:00",
           "endTime": "2026-08-23T06:00:00-05:00",
@@ -1118,7 +1099,7 @@
           "detailedForecast": "Mostly clear, with a low around 77."
         },
         {
-          "number": 10,
+          "number": 9,
           "name": "Sunday",
           "startTime": "2026-08-23T06:00:00-05:00",
           "endTime": "2026-08-23T18:00:00-05:00",
@@ -1137,7 +1118,7 @@
           "detailedForecast": "Mostly sunny, with a high near 104."
         },
         {
-          "number": 11,
+          "number": 10,
           "name": "Sunday Night",
           "startTime": "2026-08-23T18:00:00-05:00",
           "endTime": "2026-08-24T06:00:00-05:00",
@@ -1156,7 +1137,7 @@
           "detailedForecast": "Mostly clear, with a low around 78."
         },
         {
-          "number": 12,
+          "number": 11,
           "name": "Monday",
           "startTime": "2026-08-24T06:00:00-05:00",
           "endTime": "2026-08-24T18:00:00-05:00",
@@ -1175,7 +1156,7 @@
           "detailedForecast": "Mostly sunny, with a high near 105."
         },
         {
-          "number": 13,
+          "number": 12,
           "name": "Monday Night",
           "startTime": "2026-08-24T18:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
@@ -1194,7 +1175,7 @@
           "detailedForecast": "Mostly clear, with a low around 78."
         },
         {
-          "number": 14,
+          "number": 13,
           "name": "Tuesday",
           "startTime": "2026-08-25T06:00:00-05:00",
           "endTime": "2026-08-25T18:00:00-05:00",
@@ -1210,10 +1191,29 @@
           "windDirection": "SE",
           "icon": "https://api.weather.gov/icons/land/day/hot/tsra_hi,20?size=medium",
           "shortForecast": "Sunny then Slight Chance Showers And Thunderstorms",
-          "detailedForecast": "A slight chance of showers and thunderstorms after 1pm. Sunny, with a high near 104."
+          "detailedForecast": "A slight chance of showers and thunderstorms after 1pm. Sunny, with a high near 104. Chance of precipitation is 20%."
+        },
+        {
+          "number": 14,
+          "name": "Tuesday Night",
+          "startTime": "2026-08-25T18:00:00-05:00",
+          "endTime": "2026-08-26T06:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 77,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 15
+          },
+          "windSpeed": "6 to 9 mph",
+          "windDirection": "SE",
+          "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/few?size=medium",
+          "shortForecast": "Slight Chance Showers And Thunderstorms then Mostly Clear",
+          "detailedForecast": "A slight chance of showers and thunderstorms before 7pm. Mostly clear, with a low around 77."
         }
       ],
-      "updated": "2026-08-19T10:48:12.730350+00:00",
+      "updated": "2026-08-19T11:43:12.057314+00:00",
       "stale": false
     },
     "oklahoma city, ok": {
@@ -1224,10 +1224,10 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-19T04:00:00-05:00",
-        "endTime": "2026-08-19T05:00:00-05:00",
-        "isDaytime": false,
-        "temperature": 87,
+        "startTime": "2026-08-19T06:00:00-05:00",
+        "endTime": "2026-08-19T07:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 85,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
@@ -1236,41 +1236,22 @@
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 15
+          "value": 15.555555555555555
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 39
+          "value": 43
         },
         "windSpeed": "13 mph",
         "windDirection": "SSW",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
-        "shortForecast": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+        "shortForecast": "Sunny",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
-          "name": "Overnight",
-          "startTime": "2026-08-19T02:00:00-05:00",
-          "endTime": "2026-08-19T06:00:00-05:00",
-          "isDaytime": false,
-          "temperature": 83,
-          "temperatureUnit": "F",
-          "temperatureTrend": null,
-          "probabilityOfPrecipitation": {
-            "unitCode": "wmoUnit:percent",
-            "value": 0
-          },
-          "windSpeed": "13 mph",
-          "windDirection": "SSW",
-          "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-          "shortForecast": "Clear",
-          "detailedForecast": "Clear, with a low around 83. South southwest wind around 13 mph, with gusts as high as 20 mph."
-        },
-        {
-          "number": 2,
-          "name": "Wednesday",
+          "name": "Today",
           "startTime": "2026-08-19T06:00:00-05:00",
           "endTime": "2026-08-19T18:00:00-05:00",
           "isDaytime": true,
@@ -1288,8 +1269,8 @@
           "detailedForecast": "Sunny, with a high near 108. Heat index values as high as 109. Southwest wind around 13 mph, with gusts as high as 20 mph."
         },
         {
-          "number": 3,
-          "name": "Wednesday Night",
+          "number": 2,
+          "name": "Tonight",
           "startTime": "2026-08-19T18:00:00-05:00",
           "endTime": "2026-08-20T06:00:00-05:00",
           "isDaytime": false,
@@ -1307,7 +1288,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms after 1am. Mostly clear, with a low around 78. Heat index values as high as 108. Northeast wind 6 to 9 mph. Chance of precipitation is 20%."
         },
         {
-          "number": 4,
+          "number": 3,
           "name": "Thursday",
           "startTime": "2026-08-20T06:00:00-05:00",
           "endTime": "2026-08-20T18:00:00-05:00",
@@ -1326,7 +1307,7 @@
           "detailedForecast": "A slight chance of showers and thunderstorms before 7am. Mostly sunny, with a high near 101. Heat index values as high as 105. Northeast wind 5 to 8 mph. Chance of precipitation is 20%."
         },
         {
-          "number": 5,
+          "number": 4,
           "name": "Thursday Night",
           "startTime": "2026-08-20T18:00:00-05:00",
           "endTime": "2026-08-21T06:00:00-05:00",
@@ -1342,10 +1323,10 @@
           "windDirection": "ENE",
           "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
           "shortForecast": "Mostly Clear",
-          "detailedForecast": "Mostly clear, with a low around 77. East northeast wind 5 to 8 mph."
+          "detailedForecast": "Mostly clear, with a low around 77. Heat index values as high as 103. East northeast wind 5 to 8 mph."
         },
         {
-          "number": 6,
+          "number": 5,
           "name": "Friday",
           "startTime": "2026-08-21T06:00:00-05:00",
           "endTime": "2026-08-21T18:00:00-05:00",
@@ -1361,10 +1342,10 @@
           "windDirection": "ESE",
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Sunny",
-          "detailedForecast": "Sunny, with a high near 102."
+          "detailedForecast": "Sunny, with a high near 102. East southeast wind 3 to 7 mph."
         },
         {
-          "number": 7,
+          "number": 6,
           "name": "Friday Night",
           "startTime": "2026-08-21T18:00:00-05:00",
           "endTime": "2026-08-22T06:00:00-05:00",
@@ -1383,7 +1364,7 @@
           "detailedForecast": "Mostly clear, with a low around 78."
         },
         {
-          "number": 8,
+          "number": 7,
           "name": "Saturday",
           "startTime": "2026-08-22T06:00:00-05:00",
           "endTime": "2026-08-22T18:00:00-05:00",
@@ -1402,7 +1383,7 @@
           "detailedForecast": "Sunny, with a high near 104."
         },
         {
-          "number": 9,
+          "number": 8,
           "name": "Saturday Night",
           "startTime": "2026-08-22T18:00:00-05:00",
           "endTime": "2026-08-23T06:00:00-05:00",
@@ -1421,7 +1402,7 @@
           "detailedForecast": "Mostly clear, with a low around 80."
         },
         {
-          "number": 10,
+          "number": 9,
           "name": "Sunday",
           "startTime": "2026-08-23T06:00:00-05:00",
           "endTime": "2026-08-23T18:00:00-05:00",
@@ -1440,7 +1421,7 @@
           "detailedForecast": "Mostly sunny, with a high near 104."
         },
         {
-          "number": 11,
+          "number": 10,
           "name": "Sunday Night",
           "startTime": "2026-08-23T18:00:00-05:00",
           "endTime": "2026-08-24T06:00:00-05:00",
@@ -1459,7 +1440,7 @@
           "detailedForecast": "Mostly clear, with a low around 81."
         },
         {
-          "number": 12,
+          "number": 11,
           "name": "Monday",
           "startTime": "2026-08-24T06:00:00-05:00",
           "endTime": "2026-08-24T18:00:00-05:00",
@@ -1478,7 +1459,7 @@
           "detailedForecast": "Sunny, with a high near 105."
         },
         {
-          "number": 13,
+          "number": 12,
           "name": "Monday Night",
           "startTime": "2026-08-24T18:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
@@ -1497,7 +1478,7 @@
           "detailedForecast": "Mostly clear, with a low around 80."
         },
         {
-          "number": 14,
+          "number": 13,
           "name": "Tuesday",
           "startTime": "2026-08-25T06:00:00-05:00",
           "endTime": "2026-08-25T18:00:00-05:00",
@@ -1514,9 +1495,28 @@
           "icon": "https://api.weather.gov/icons/land/day/hot?size=medium",
           "shortForecast": "Sunny",
           "detailedForecast": "Sunny, with a high near 103."
+        },
+        {
+          "number": 14,
+          "name": "Tuesday Night",
+          "startTime": "2026-08-25T18:00:00-05:00",
+          "endTime": "2026-08-26T06:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 80,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 8
+          },
+          "windSpeed": "10 mph",
+          "windDirection": "SE",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": "Mostly clear, with a low around 80."
         }
       ],
-      "updated": "2026-08-19T10:48:12.730350+00:00",
+      "updated": "2026-08-19T11:43:12.057314+00:00",
       "stale": false
     }
   }
