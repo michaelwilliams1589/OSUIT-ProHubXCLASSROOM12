@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-25T01:54:26.918571+00:00",
-  "lastAttemptAt": "2026-08-25T01:54:26.918571+00:00",
+  "generatedAt": "2026-08-25T03:14:06.735039+00:00",
+  "lastAttemptAt": "2026-08-25T03:14:06.735039+00:00",
   "status": "ok",
   "locations": {
     "okmulgee, ok": {
@@ -12,35 +12,35 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-24T20:00:00-05:00",
-        "endTime": "2026-08-24T21:00:00-05:00",
+        "startTime": "2026-08-24T22:00:00-05:00",
+        "endTime": "2026-08-24T23:00:00-05:00",
         "isDaytime": false,
-        "temperature": 91,
+        "temperature": 83,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 20
+          "value": 11
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 22.22222222222222
+          "value": 21.666666666666668
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 54
+          "value": 67
         },
         "windSpeed": "5 mph",
-        "windDirection": "E",
-        "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20?size=small",
-        "shortForecast": "Slight Chance Showers And Thunderstorms",
+        "windDirection": "SE",
+        "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+        "shortForecast": "Mostly Cloudy",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-08-24T20:00:00-05:00",
+          "startTime": "2026-08-24T22:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 73,
@@ -48,13 +48,13 @@
           "temperatureTrend": null,
           "probabilityOfPrecipitation": {
             "unitCode": "wmoUnit:percent",
-            "value": 20
+            "value": 11
           },
           "windSpeed": "5 mph",
           "windDirection": "SE",
-          "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/sct?size=medium",
-          "shortForecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
-          "detailedForecast": "A slight chance of showers and thunderstorms before 10pm. Partly cloudy, with a low around 73. Southeast wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
+          "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+          "shortForecast": "Partly Cloudy",
+          "detailedForecast": "Partly cloudy, with a low around 73. Southeast wind around 5 mph. New rainfall amounts less than a tenth of an inch possible."
         },
         {
           "number": 2,
@@ -304,7 +304,7 @@
           "detailedForecast": "Sunny, with a high near 102. South wind 5 to 10 mph."
         }
       ],
-      "updated": "2026-08-25T01:54:26.918571+00:00",
+      "updated": "2026-08-25T03:14:06.735039+00:00",
       "stale": false
     },
     "tulsa, ok": {
@@ -315,15 +315,15 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-24T20:00:00-05:00",
-        "endTime": "2026-08-24T21:00:00-05:00",
+        "startTime": "2026-08-24T22:00:00-05:00",
+        "endTime": "2026-08-24T23:00:00-05:00",
         "isDaytime": false,
-        "temperature": 91,
+        "temperature": 85,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 10
+          "value": 6
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
@@ -331,19 +331,19 @@
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 56
+          "value": 67
         },
         "windSpeed": "10 mph",
         "windDirection": "E",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
-        "shortForecast": "Mostly Cloudy",
+        "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+        "shortForecast": "Partly Cloudy",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-08-24T20:00:00-05:00",
+          "startTime": "2026-08-24T22:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 75,
@@ -351,13 +351,13 @@
           "temperatureTrend": null,
           "probabilityOfPrecipitation": {
             "unitCode": "wmoUnit:percent",
-            "value": 10
+            "value": 6
           },
           "windSpeed": "5 to 10 mph",
           "windDirection": "E",
           "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
           "shortForecast": "Partly Cloudy",
-          "detailedForecast": "Partly cloudy, with a low around 75. Heat index values as high as 100. East wind 5 to 10 mph."
+          "detailedForecast": "Partly cloudy, with a low around 75. East wind 5 to 10 mph."
         },
         {
           "number": 2,
@@ -607,7 +607,7 @@
           "detailedForecast": "Sunny, with a high near 101. South wind 10 to 15 mph, with gusts as high as 20 mph."
         }
       ],
-      "updated": "2026-08-25T01:54:26.918571+00:00",
+      "updated": "2026-08-25T03:14:06.735039+00:00",
       "stale": false
     },
     "bixby, ok": {
@@ -618,15 +618,15 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-24T20:00:00-05:00",
-        "endTime": "2026-08-24T21:00:00-05:00",
+        "startTime": "2026-08-24T22:00:00-05:00",
+        "endTime": "2026-08-24T23:00:00-05:00",
         "isDaytime": false,
-        "temperature": 90,
+        "temperature": 83,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 15
+          "value": 8
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
@@ -634,19 +634,19 @@
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 58
+          "value": 72
         },
         "windSpeed": "10 mph",
-        "windDirection": "E",
-        "icon": "https://api.weather.gov/icons/land/night/tsra_sct,20?size=small",
-        "shortForecast": "Slight Chance Showers And Thunderstorms",
+        "windDirection": "SE",
+        "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+        "shortForecast": "Partly Cloudy",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-08-24T20:00:00-05:00",
+          "startTime": "2026-08-24T22:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 74,
@@ -654,13 +654,13 @@
           "temperatureTrend": null,
           "probabilityOfPrecipitation": {
             "unitCode": "wmoUnit:percent",
-            "value": 15
+            "value": 8
           },
           "windSpeed": "5 to 10 mph",
           "windDirection": "SE",
-          "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/sct?size=medium",
-          "shortForecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
-          "detailedForecast": "A slight chance of showers and thunderstorms before 10pm. Partly cloudy, with a low around 74. Southeast wind 5 to 10 mph. Chance of precipitation is 20%."
+          "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+          "shortForecast": "Partly Cloudy",
+          "detailedForecast": "Partly cloudy, with a low around 74. Southeast wind 5 to 10 mph."
         },
         {
           "number": 2,
@@ -910,7 +910,7 @@
           "detailedForecast": "Sunny, with a high near 101. South wind 10 to 15 mph, with gusts as high as 20 mph."
         }
       ],
-      "updated": "2026-08-25T01:54:26.918571+00:00",
+      "updated": "2026-08-25T03:14:06.735039+00:00",
       "stale": false
     },
     "stillwater, ok": {
@@ -921,25 +921,25 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-24T20:00:00-05:00",
-        "endTime": "2026-08-24T21:00:00-05:00",
+        "startTime": "2026-08-24T22:00:00-05:00",
+        "endTime": "2026-08-24T23:00:00-05:00",
         "isDaytime": false,
-        "temperature": 91,
+        "temperature": 84,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 7
+          "value": 8
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 21.666666666666668
+          "value": 22.22222222222222
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 52
+          "value": 67
         },
-        "windSpeed": "8 mph",
+        "windSpeed": "7 mph",
         "windDirection": "ENE",
         "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
         "shortForecast": "Partly Cloudy",
@@ -949,7 +949,7 @@
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-08-24T20:00:00-05:00",
+          "startTime": "2026-08-24T22:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 73,
@@ -959,11 +959,11 @@
             "unitCode": "wmoUnit:percent",
             "value": 8
           },
-          "windSpeed": "3 to 8 mph",
+          "windSpeed": "3 to 7 mph",
           "windDirection": "ENE",
           "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
           "shortForecast": "Partly Cloudy",
-          "detailedForecast": "Partly cloudy, with a low around 73. Heat index values as high as 98. East northeast wind 3 to 8 mph."
+          "detailedForecast": "Partly cloudy, with a low around 73. East northeast wind 3 to 7 mph."
         },
         {
           "number": 2,
@@ -1213,7 +1213,7 @@
           "detailedForecast": "Sunny, with a high near 102."
         }
       ],
-      "updated": "2026-08-25T01:54:26.918571+00:00",
+      "updated": "2026-08-25T03:14:06.735039+00:00",
       "stale": false
     },
     "oklahoma city, ok": {
@@ -1224,35 +1224,35 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-08-24T20:00:00-05:00",
-        "endTime": "2026-08-24T21:00:00-05:00",
+        "startTime": "2026-08-24T22:00:00-05:00",
+        "endTime": "2026-08-24T23:00:00-05:00",
         "isDaytime": false,
-        "temperature": 98,
+        "temperature": 90,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 15
+          "value": 10
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 18.88888888888889
+          "value": 20
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 35
+          "value": 49
         },
         "windSpeed": "7 mph",
-        "windDirection": "NNE",
-        "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20?size=small",
-        "shortForecast": "Slight Chance Showers And Thunderstorms",
+        "windDirection": "NE",
+        "icon": "https://api.weather.gov/icons/land/night/few?size=small",
+        "shortForecast": "Mostly Clear",
         "detailedForecast": ""
       },
       "periods": [
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-08-24T20:00:00-05:00",
+          "startTime": "2026-08-24T22:00:00-05:00",
           "endTime": "2026-08-25T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 78,
@@ -1260,13 +1260,13 @@
           "temperatureTrend": null,
           "probabilityOfPrecipitation": {
             "unitCode": "wmoUnit:percent",
-            "value": 15
+            "value": 13
           },
           "windSpeed": "7 mph",
           "windDirection": "E",
-          "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/sct?size=medium",
-          "shortForecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
-          "detailedForecast": "A slight chance of showers and thunderstorms before 10pm. Partly cloudy, with a low around 78. Heat index values as high as 102. East wind around 7 mph. Chance of precipitation is 20%."
+          "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+          "shortForecast": "Partly Cloudy",
+          "detailedForecast": "Partly cloudy, with a low around 78. East wind around 7 mph."
         },
         {
           "number": 2,
@@ -1516,7 +1516,7 @@
           "detailedForecast": "Sunny, with a high near 101."
         }
       ],
-      "updated": "2026-08-25T01:54:26.918571+00:00",
+      "updated": "2026-08-25T03:14:06.735039+00:00",
       "stale": false
     }
   }
