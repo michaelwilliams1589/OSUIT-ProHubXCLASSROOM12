@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T23:00:50.867019+00:00",
-  "lastAttemptAt": "2026-10-02T23:00:50.867019+00:00",
-  "status": "ok",
+  "generatedAt": "2026-10-03T02:02:31.365505+00:00",
+  "lastAttemptAt": "2026-10-03T02:02:31.365505+00:00",
+  "status": "partial",
   "locations": {
     "okmulgee, ok": {
       "name": "Okmulgee",
@@ -305,7 +305,9 @@
         }
       ],
       "updated": "2026-10-02T23:00:50.867019+00:00",
-      "stale": false
+      "stale": true,
+      "lastError": "HTTP Error 503: Service Unavailable",
+      "lastAttemptAt": "2026-10-03T02:02:31.365505+00:00"
     },
     "tulsa, ok": {
       "name": "Tulsa",
@@ -608,7 +610,9 @@
         }
       ],
       "updated": "2026-10-02T23:00:50.867019+00:00",
-      "stale": false
+      "stale": true,
+      "lastError": "HTTP Error 503: Service Unavailable",
+      "lastAttemptAt": "2026-10-03T02:02:31.365505+00:00"
     },
     "bixby, ok": {
       "name": "Bixby",
@@ -911,7 +915,9 @@
         }
       ],
       "updated": "2026-10-02T23:00:50.867019+00:00",
-      "stale": false
+      "stale": true,
+      "lastError": "HTTP Error 503: Service Unavailable",
+      "lastAttemptAt": "2026-10-03T02:02:31.365505+00:00"
     },
     "stillwater, ok": {
       "name": "Stillwater",
@@ -1214,7 +1220,9 @@
         }
       ],
       "updated": "2026-10-02T23:00:50.867019+00:00",
-      "stale": false
+      "stale": true,
+      "lastError": "HTTP Error 503: Service Unavailable",
+      "lastAttemptAt": "2026-10-03T02:02:31.365505+00:00"
     },
     "oklahoma city, ok": {
       "name": "Oklahoma City",
@@ -1224,25 +1232,25 @@
       "current": {
         "number": 1,
         "name": "",
-        "startTime": "2026-10-02T18:00:00-05:00",
-        "endTime": "2026-10-02T19:00:00-05:00",
+        "startTime": "2026-10-02T21:00:00-05:00",
+        "endTime": "2026-10-02T22:00:00-05:00",
         "isDaytime": false,
-        "temperature": 68,
+        "temperature": 69,
         "temperatureUnit": "F",
         "temperatureTrend": null,
         "probabilityOfPrecipitation": {
           "unitCode": "wmoUnit:percent",
-          "value": 7
+          "value": 1
         },
         "dewpoint": {
           "unitCode": "wmoUnit:degC",
-          "value": 17.22222222222222
+          "value": 16.666666666666668
         },
         "relativeHumidity": {
           "unitCode": "wmoUnit:percent",
-          "value": 84
+          "value": 78
         },
-        "windSpeed": "10 mph",
+        "windSpeed": "9 mph",
         "windDirection": "NNE",
         "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
         "shortForecast": "Mostly Cloudy",
@@ -1252,7 +1260,7 @@
         {
           "number": 1,
           "name": "Tonight",
-          "startTime": "2026-10-02T18:00:00-05:00",
+          "startTime": "2026-10-02T21:00:00-05:00",
           "endTime": "2026-10-03T06:00:00-05:00",
           "isDaytime": false,
           "temperature": 60,
@@ -1260,13 +1268,13 @@
           "temperatureTrend": null,
           "probabilityOfPrecipitation": {
             "unitCode": "wmoUnit:percent",
-            "value": 7
+            "value": 6
           },
-          "windSpeed": "6 to 10 mph",
+          "windSpeed": "6 to 9 mph",
           "windDirection": "NNE",
           "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
           "shortForecast": "Mostly Cloudy",
-          "detailedForecast": "Mostly cloudy, with a low around 60. North northeast wind 6 to 10 mph."
+          "detailedForecast": "Mostly cloudy, with a low around 60. North northeast wind 6 to 9 mph."
         },
         {
           "number": 2,
@@ -1516,7 +1524,7 @@
           "detailedForecast": "Sunny, with a high near 92."
         }
       ],
-      "updated": "2026-10-02T23:00:50.867019+00:00",
+      "updated": "2026-10-03T02:02:31.365505+00:00",
       "stale": false
     }
   }
